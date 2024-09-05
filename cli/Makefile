@@ -1,13 +1,19 @@
-cc=g++
-CFLAGS =
-TARGET = main
+# (1)コンパイラ
+CC  = g++
+# (2)コンパイルオプション
+CFLAGS    =
+# (3)実行ファイル名
+TARGET  = main
+# (4)コンパイル対象のソースコード
 SRCS    = main.cpp
+# (5)オブジェクトファイル名
 OBJS    = $(SRCS:.cpp=.o)
+ 
 # (6)インクルードファイルのあるディレクトリパス
 INCDIR  = -I../inc
  
 # (7)ライブラリファイルのあるディレクトリパス
-LIBDIR  = 
+LIBDIR  = -I../src
  
 # (8)追加するライブラリファイル
 LIBS    = 
